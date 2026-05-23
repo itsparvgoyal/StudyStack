@@ -6,7 +6,7 @@ import axios from "axios";
 // withCredintials : true ==> means har request ke sath cookies bhi bhejni hai ye khega browser ko 
 
 const api = axios.create({
-    baseURL: "http://localhost:3000/api/v1",
+    baseURL: "https://studystack-mrz5.onrender.com/api/v1",
     withCredentials: true,
 });
 
