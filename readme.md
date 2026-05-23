@@ -111,6 +111,6 @@ UGAC/
 │   ├── middlewares/
 │   ├── config/
 │   └── index.js
-│   └── README.md (Information about APIs)
+│   └── README.md
 │
 └── README.md
