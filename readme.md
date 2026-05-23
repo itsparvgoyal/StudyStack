@@ -6,16 +6,6 @@ The platform includes secure JWT authentication, role-based access control, Clou
 
 ---
 
-# 🚀 Live Demo
-
-## Frontend
-- Deployed on Vercel
-
-## Backend
-- Deployed on Render
-
----
-
 # ✨ Features
 
 ## 👨‍🎓 Student Features
@@ -121,6 +111,6 @@ UGAC/
 │   ├── middlewares/
 │   ├── config/
 │   └── index.js
-│   └── README.md
+│   └── README.md (Api information)
 │
 └── README.md
