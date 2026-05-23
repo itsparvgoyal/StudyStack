@@ -6,6 +6,40 @@ The platform includes secure JWT authentication, role-based access control, Clou
 
 ---
 
+# Setup 
+
+### For Backend
+```bash
+cd Backend
+npm install 
+npm install express mongoose dotenv cors bcrypt jsonwebtoken cookie-parser express-fileupload cloudinary nodemailer
+Make a .env file and add these 
+
+PORT= 
+MONGO_URL= (cloud db)
+FRONTEND_URL= 
+COOKIE_SECRET= 
+JWT_SECRET= 
+CLOUD_NAME= 
+API_KEY= 
+API_SECRET= 
+EMAIL_USER= (mail responsible to send mail)
+EMAIL_PASS=
+
+
+npm run dev
+```
+### For Frontend
+```bash
+cd Frontend
+npm install 
+npm install react react-dom react-router-dom axios react-hot-toast lucide-react
+npm install -D vite @vitejs/plugin-react tailwindcss postcss autoprefixer
+add "backendUrl/api/v1" in src/services/api.js
+npm run dev
+```
+
+
 # ✨ Features
 
 ## 👨‍🎓 Student Features

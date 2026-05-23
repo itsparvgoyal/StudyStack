@@ -16,9 +16,10 @@ app.use(
 );
 
 app.use(cors({
-    origin : "https://studystack-v1.netlify.app",
+    origin : process.env.FRONTEND_URL,
     credentials : true
 }))
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({extended:true}));   
