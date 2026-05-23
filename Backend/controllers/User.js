@@ -47,7 +47,7 @@ const registerUser = async (req, res) => {
         res.cookie("token", token, {
             httpOnly: true,
             secure: true,
-            sameSite: "strict"
+            sameSite: "none"
         });
 
         // hide password from user so that no one can see in response 
@@ -110,7 +110,7 @@ const loginUser = async (req, res) => {
         res.cookie("token", token, {
             httpOnly: true,
             secure: true,
-            sameSite: "strict"
+            sameSite: "none"
         });
 
         user.password = undefined;
