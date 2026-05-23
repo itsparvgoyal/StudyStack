@@ -1,8 +1,10 @@
+import React from "react";
 import { useState } from "react";
 import api from "../services/api";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { useAuth } from "../context/AuthContext";
+
 
 const Signup = () => {
     const navigate = useNavigate();

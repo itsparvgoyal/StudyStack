@@ -1,8 +1,11 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import api from "../services/api";
 import toast from "react-hot-toast";
 import { useAuth } from "../context/AuthContext";
+
+
 const CourseDetails = () => {
 
     const [course, setCourse] = useState(null);

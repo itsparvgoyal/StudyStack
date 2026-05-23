@@ -1,8 +1,8 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import AppRoutes from "./routes/AppRoutes";
 import Navbar from "./components/Navbar";
-
 
 function App() {
 
