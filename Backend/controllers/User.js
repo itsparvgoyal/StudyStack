@@ -52,6 +52,12 @@ const registerUser = async (req, res) => {
 
         // hide password from user so that no one can see in response 
         user.password = undefined;
+        
+        res.status(201).json({
+            message: "User registered successfully",
+            token,
+            user
+        });
 
         // send mail to user who created the account
             await mailTransporter.sendMail({
@@ -68,11 +74,6 @@ const registerUser = async (req, res) => {
             });
             // console.log("mail sent")
 
-        res.status(201).json({
-            message: "User registered successfully",
-            token,
-            user
-        });
     } catch (error) {
         console.log(error);
         console.error(error);
