@@ -60,19 +60,25 @@ const registerUser = async (req, res) => {
         });
 
         // send mail to user who created the account
-            await mailTransporter.sendMail({
-                from: process.env.EMAIL_USER,
-                to: email,
-                subject: "Successfull Registration on StudyStack",
-                html: `
-                    <p>
-                        Your account has been registered successfully on StudyStack.
-                        <br/>
-                        You can login now.
-                    </p>
-                `
-            });
-            // console.log("mail sent")
+        setImmediate(async () => {
+            try {
+                await mailTransporter.sendMail({
+                    from: process.env.EMAIL_USER,
+                    to: email,
+                    subject: "Successfull Registration on StudyStack",
+                    html: `
+                        <p>
+                            Your account has been registered successfully on StudyStack.
+                            <br/>
+                            You can login now.
+                        </p>
+                    `
+                }); 
+                console.log("mail sent")
+            } catch (error) {
+                console.log("error while sending mail",error);
+            }
+        });
 
     } catch (error) {
         console.log(error);
