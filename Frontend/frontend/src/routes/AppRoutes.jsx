@@ -8,7 +8,7 @@ import StudentDashboard from "../pages/StudentDashboard";
 import AdminDashboard from "../pages/AdminDashboard";
 import PendingRequests from "../pages/PendingRequests";
 import AddCourse from "../pages/AddCourse";
-import CourseDetails from "../pages/Coursedetails";
+import CourseDetails from "../pages/CourseDetails";
 import ProtectedRoute from "../components/ProtectedRoute";
 
 const AppRoutes = () => {
